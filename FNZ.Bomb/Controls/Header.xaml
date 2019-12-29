@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="FNZ.Bomb.Controls.Header"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FNZ.Bomb.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             MouseDoubleClick="UserControl_MouseDoubleClick">
+    <Grid>
+        <Border Background="{StaticResource HeaderColor}"  Opacity=".2"
+                    CornerRadius="0 0 50 0" />
+        <Border BorderBrush="{StaticResource HeaderColor}" BorderThickness="1"
+                    CornerRadius="0 0 50 0"/>
+        <Image Source="/logo.png" />
+
+    </Grid>
+</UserControl>

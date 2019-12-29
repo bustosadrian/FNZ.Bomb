@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNZ.Bomb", "FNZ.Bomb\FNZ.Bomb.csproj", "{CB9D1A12-F380-467C-88B9-B42889C73DC5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FNZ.Bomb.Installer", "FNZ.Bomb.Installer\FNZ.Bomb.Installer.vdproj", "{1115858C-87B7-4065-B7BC-53E58FD33498}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB9D1A12-F380-467C-88B9-B42889C73DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9D1A12-F380-467C-88B9-B42889C73DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9D1A12-F380-467C-88B9-B42889C73DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9D1A12-F380-467C-88B9-B42889C73DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1115858C-87B7-4065-B7BC-53E58FD33498}.Debug|Any CPU.ActiveCfg = Debug
+		{1115858C-87B7-4065-B7BC-53E58FD33498}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2CD7AF7-6E84-4C9E-A621-02A9BD21F245}
+	EndGlobalSection
+EndGlobal

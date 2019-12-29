@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:FNZ.Bomb.Lang">
+    <system:String x:Key="to_defusing">DEFUSING</system:String>
+    <system:String x:Key="defused">DEFUSED!</system:String>
+    <system:String x:Key="explosion">EXPLOSION!</system:String>
+</ResourceDictionary>
