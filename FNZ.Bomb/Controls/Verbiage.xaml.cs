@@ -197,7 +197,7 @@ namespace FNZ.Bomb.Controls
                         break;
                     case VerbiageState.EXPLODED:
                         //retval = (string)Application.Current.FindResource("explosion");
-                        retval = "EXPLOSION!";
+                        retval = "BOOM!";
                         break;
                 }
             }

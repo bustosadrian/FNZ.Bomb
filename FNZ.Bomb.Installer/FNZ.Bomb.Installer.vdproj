@@ -15,14 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_05E45F70A2C0402AA70E5129A4F36523"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_3F5AFE3F2562810BE65158ABBB5EE77E"
+        "OwnerKey" = "8:_FC49F819659D428B9B79C2957351BEE1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3F5AFE3F2562810BE65158ABBB5EE77E"
-        "OwnerKey" = "8:_05E45F70A2C0402AA70E5129A4F36523"
+        "MsmKey" = "8:_FC49F819659D428B9B79C2957351BEE1"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_05E45F70A2C0402AA70E5129A4F36523"
+        "OwnerKey" = "8:_FC49F819659D428B9B79C2957351BEE1"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +55,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -71,6 +87,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -188,7 +212,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FNZ Bomb"
         "ProductCode" = "8:{5F394AA6-FB3D-4CF1-B6AA-3984360CBBBD}"
-        "PackageCode" = "8:{1039D556-2205-471C-8668-ACEBC83336F9}"
+        "PackageCode" = "8:{63129BC7-BFB8-47E9-8798-0FF0EBA70977}"
         "UpgradeCode" = "8:{1522DC33-8064-4005-BE0D-FB9AA8544392}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -707,7 +731,35 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_05E45F70A2C0402AA70E5129A4F36523"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_062F4DC64FD14B83AE2A2AA9E38C6E51"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_2F7680FACDC54527A1C3B2FF347FF16B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
+            "OutputProjectGuid" = "8:{CB9D1A12-F380-467C-88B9-B42889C73DC5}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FC49F819659D428B9B79C2957351BEE1"
             {
             "SourcePath" = "8:..\\FNZ.Bomb\\obj\\Debug\\FNZ.Bomb.exe"
             "TargetName" = "8:"
