@@ -16,12 +16,12 @@
         "Entry"
         {
         "MsmKey" = "8:_3F5AFE3F2562810BE65158ABBB5EE77E"
-        "OwnerKey" = "8:_FC49F819659D428B9B79C2957351BEE1"
+        "OwnerKey" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_FC49F819659D428B9B79C2957351BEE1"
+        "MsmKey" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FC49F819659D428B9B79C2957351BEE1"
+        "OwnerKey" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -94,6 +94,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -212,7 +220,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FNZ Bomb"
         "ProductCode" = "8:{5F394AA6-FB3D-4CF1-B6AA-3984360CBBBD}"
-        "PackageCode" = "8:{63129BC7-BFB8-47E9-8798-0FF0EBA70977}"
+        "PackageCode" = "8:{1FBF049B-A95C-4A3B-94FC-0153354C514D}"
         "UpgradeCode" = "8:{1522DC33-8064-4005-BE0D-FB9AA8544392}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -759,9 +767,9 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FC49F819659D428B9B79C2957351BEE1"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FFBBDB7AF2404921A78916ABDD5CABC8"
             {
-            "SourcePath" = "8:..\\FNZ.Bomb\\obj\\Debug\\FNZ.Bomb.exe"
+            "SourcePath" = "8:..\\FNZ.Bomb\\obj\\Debug\\FNZ Bomb.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2F7680FACDC54527A1C3B2FF347FF16B"
