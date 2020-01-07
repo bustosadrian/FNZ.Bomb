@@ -79,6 +79,19 @@ namespace FNZ.Bomb.Controls
             }
         }
 
+        #region Commands Properties
+
+        public static readonly DependencyProperty HiddenCommandProperty =
+            DependencyProperty.Register("HiddenCommand", typeof(DelegateCommand),
+                typeof(Verbiage), new PropertyMetadata(null));
+        public DelegateCommand HiddenCommand
+        {
+            get { return (DelegateCommand)GetValue(HiddenCommandProperty); }
+            set { SetValue(HiddenCommandProperty, value); }
+        }
+
+        #endregion
+
         #region Events
 
         public static readonly RoutedEvent DefusingEvent = EventManager.RegisterRoutedEvent(
@@ -102,7 +115,8 @@ namespace FNZ.Bomb.Controls
         }
         private void RaiseHiden()
         {
-            RaiseEvent(new RoutedEventArgs(HiddenEvent));
+            //RaiseEvent(new RoutedEventArgs(HiddenEvent));
+            HiddenCommand?.Execute(null);
         }
 
         #endregion

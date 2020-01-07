@@ -4,7 +4,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:FNZ.Bomb.Controls"
-        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d" 
         Title="FNZ Bomb"
         WindowState="Maximized"
@@ -32,13 +31,9 @@
         <!-- MESSAGE BOX -->
         <Grid>
             <controls:Verbiage x:Name="Verbiage" 
-                               Code="{Binding SubmitedCode, Mode=TwoWay}">
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="Hidden">
-                        <i:InvokeCommandAction Command="{Binding VerbiageHiddenCommand}" />
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
-            </controls:Verbiage>
+                               Code="{Binding SubmitedCode, Mode=TwoWay}"
+                               HiddenCommand="{Binding VerbiageHiddenCommand}"/>
+
         </Grid>
     </Grid>
 </Window>
