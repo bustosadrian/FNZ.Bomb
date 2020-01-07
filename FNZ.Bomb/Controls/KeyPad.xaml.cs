@@ -27,6 +27,18 @@ namespace FNZ.Bomb.Controls
             }
         }
 
+        private void ClearEverything()
+        {
+            if (CanClearExecute())
+            {
+                if (!string.IsNullOrEmpty(Code))
+                {
+                    Code = "";
+                    RaiseAllCanExecute();
+                }
+            }
+        }
+
         private void Clear()
         {
             if (CanClearExecute())
@@ -75,50 +87,70 @@ namespace FNZ.Bomb.Controls
                 if (!e.Handled)
                 {
                     Button b = null;
-                    if (e.Key >= Key.D0 && e.Key <= Key.D9)
+                    if ((e.Key >= Key.D0 && e.Key <= Key.D9) 
+                        || (e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9))
                     {
                         if (CanDigitExecute())
                         {
                             switch (e.Key)
                             {
                                 case Key.D0:
+                                case Key.NumPad0:
                                     b = btn0;
                                     break;
                                 case Key.D1:
+                                case Key.NumPad1:
                                     b = btn1;
                                     break;
                                 case Key.D2:
+                                case Key.NumPad2:
                                     b = btn2;
                                     break;
                                 case Key.D3:
+                                case Key.NumPad3:
                                     b = btn3;
                                     break;
                                 case Key.D4:
+                                case Key.NumPad4:
                                     b = btn4;
                                     break;
                                 case Key.D5:
+                                case Key.NumPad5:
                                     b = btn5;
                                     break;
                                 case Key.D6:
+                                case Key.NumPad6:
                                     b = btn6;
                                     break;
                                 case Key.D7:
+                                case Key.NumPad7:
                                     b = btn7;
                                     break;
                                 case Key.D8:
+                                case Key.NumPad8:
                                     b = btn8;
                                     break;
                                 case Key.D9:
+                                case Key.NumPad9:
                                     b = btn9;
                                     break;
                             }
                         }
                     }
-                    else if (e.Key == Key.Delete || e.Key == Key.Back)
+                    else if (e.Key == Key.Delete 
+                        || e.Key == Key.Back 
+                        || e.Key == Key.Decimal)
                     {
                         if (CanClearExecute())
                         {
                             b = btnClear;
+                        }
+                    }
+                    else if (e.Key == Key.Escape)
+                    {
+                        if (CanClearExecute())
+                        {
+                            ClearEverything();
                         }
                     }
                     else if (e.Key == Key.Enter)

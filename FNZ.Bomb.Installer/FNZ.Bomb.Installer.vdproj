@@ -28,13 +28,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3F5AFE3F2562810BE65158ABBB5EE77E"
+        "OwnerKey" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
+        "OwnerKey" = "8:_3F5AFE3F2562810BE65158ABBB5EE77E"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -220,7 +220,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FNZ Bomb"
         "ProductCode" = "8:{5F394AA6-FB3D-4CF1-B6AA-3984360CBBBD}"
-        "PackageCode" = "8:{1FBF049B-A95C-4A3B-94FC-0153354C514D}"
+        "PackageCode" = "8:{66B381C0-BA0D-4FFF-99D7-1049C251DDEA}"
         "UpgradeCode" = "8:{1522DC33-8064-4005-BE0D-FB9AA8544392}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -340,6 +340,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1DE3EFE7C527423086A2C64826A9AAFB"
+            {
+            "Name" = "8:FNZ Bomb"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:32512"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
+            "Folder" = "8:_1A2D9AE67F7F4C92A82B0520D9209A54"
+            "WorkingFolder" = "8:_2F7680FACDC54527A1C3B2FF347FF16B"
+            "Icon" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5DFB5FA5A19440668BBB28667380A8C9"
+            {
+            "Name" = "8:FNZ Bomb"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:32512"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
+            "Folder" = "8:_41C3F49C86DD4875A5A89D317530D088"
+            "WorkingFolder" = "8:_2F7680FACDC54527A1C3B2FF347FF16B"
+            "Icon" = "8:_FFBBDB7AF2404921A78916ABDD5CABC8"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
