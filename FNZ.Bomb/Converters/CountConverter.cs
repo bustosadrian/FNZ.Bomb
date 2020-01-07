@@ -10,8 +10,9 @@ namespace FNZ.Bomb.Converters
         {
             int retval = 0;
 
-            if (value is System.Collections.ICollection collection)
+            if (value is System.Collections.ICollection)
             {
+                System.Collections.ICollection collection = (System.Collections.ICollection)value;
                 retval = collection.Count;
             }
 

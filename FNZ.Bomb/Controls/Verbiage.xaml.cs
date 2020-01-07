@@ -197,8 +197,9 @@ namespace FNZ.Bomb.Controls
         {
             string retval = null;
 
-            if (value is VerbiageState state)
+            if (value is VerbiageState)
             {
+                VerbiageState state = (VerbiageState)value;
                 switch (state)
                 {
                     case VerbiageState.DEFUSING:
