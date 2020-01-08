@@ -27,7 +27,8 @@
         <Grid Grid.Row="0">
             <local:Display Length="{Binding Length, ElementName=Self}" 
                            Code="{Binding Code, ElementName=Self}"
-                           FontSize="{StaticResource DisplayFontSize}" />
+                           FontSize="{StaticResource DisplayFontSize}" 
+                           Alignment="{Binding Alignment, ElementName=Self}"/>
         </Grid>
         
         

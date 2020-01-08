@@ -35,8 +35,20 @@ namespace FNZ.Bomb
             {
 
             }
+
+            try
+            {
+                retval.Alignment = (TextAlignment)System.Enum.Parse(
+                    typeof(TextAlignment), ConfigurationManager.AppSettings["Alignment"]);
+            }
+            catch
+            {
+
+            }
+
             retval.CodeLength =  retval.CodeLength ?? defaultSettings.CodeLength;
             retval.WindowStyle = retval.WindowStyle ?? defaultSettings.WindowStyle;
+            retval.Alignment = retval.Alignment ?? defaultSettings.Alignment;
 
             return retval;
         }

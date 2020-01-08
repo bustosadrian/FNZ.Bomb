@@ -33,10 +33,21 @@ namespace FNZ.Bomb.Controls
             if(Code != null)
             {
                 char[] chars = Code.ToCharArray();
-                for (int i = 0; i < digits.Length && i < Code.Length; i++)
+                if(Alignment == TextAlignment.Left)
                 {
-                    var o = chars[i];
-                    digits[Length - i - 1] = o.ToString();
+                    for (int i = 0; i < digits.Length && i < Code.Length; i++)
+                    {
+                        var o = chars[i];
+                        digits[i] = o.ToString();
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < digits.Length && i < Code.Length; i++)
+                    {
+                        var o = chars[i];
+                        digits[Length - i - 1] = o.ToString();
+                    }
                 }
             }
             if(Digits == null || Digits.Count != digits.Length)
@@ -86,6 +97,14 @@ namespace FNZ.Bomb.Controls
             ((Display)d).DisplayCode();
         }
 
+        public static readonly DependencyProperty AlignmentProperty =
+            DependencyProperty.Register("Alignment", typeof(TextAlignment),
+                typeof(Display), new PropertyMetadata(TextAlignment.Right));
+        public TextAlignment Alignment
+        {
+            get { return (TextAlignment)GetValue(AlignmentProperty); }
+            set { SetValue(LenghtProperty, value); }
+        }
 
         #endregion
     }

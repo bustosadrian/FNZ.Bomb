@@ -25,7 +25,8 @@
                              Length="{Binding CodeLength}" 
                              IsEnabled="{Binding IsKeyPadEnabled}"
                              Code="{Binding Code, Mode=TwoWay, Converter={StaticResource c_ne}}" 
-                             Command="{Binding SubmitCommand}" />
+                             Command="{Binding SubmitCommand}" 
+                             Alignment="{Binding Alignment}" />
         </Grid>
 
         <!-- MESSAGE BOX -->

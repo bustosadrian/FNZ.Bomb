@@ -9,6 +9,7 @@ namespace FNZ.Bomb
         {
             CodeLength = 6;
             WindowStyle = System.Windows.WindowStyle.SingleBorderWindow;
+            Alignment = TextAlignment.Right;
         }
 
         #region Properties
@@ -20,6 +21,12 @@ namespace FNZ.Bomb
         }
 
         public WindowStyle? WindowStyle
+        {
+            get;
+            set;
+        }
+
+        public TextAlignment? Alignment
         {
             get;
             set;

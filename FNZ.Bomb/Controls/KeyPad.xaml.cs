@@ -305,6 +305,16 @@ namespace FNZ.Bomb.Controls
             set { SetValue(LenghtProperty, value); }
         }
 
+        public static readonly DependencyProperty AlignmentProperty =
+            DependencyProperty.Register("Alignment", typeof(TextAlignment),
+                typeof(KeyPad), new PropertyMetadata(TextAlignment.Right));
+        public TextAlignment Alignment
+        {
+            get { return (TextAlignment)GetValue(AlignmentProperty); }
+            set { SetValue(LenghtProperty, value); }
+        }
+
+
         #endregion
     }
 }

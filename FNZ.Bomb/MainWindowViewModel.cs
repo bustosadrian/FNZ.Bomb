@@ -8,6 +8,7 @@ namespace FNZ.Bomb
         {
             WindowStyle = SettingsHandler.Instance.WindowStyle.Value;
             CodeLength = SettingsHandler.Instance.CodeLength.Value;
+            Alignment = SettingsHandler.Instance.Alignment.Value;
             EnableKeyPad();
         }
 
@@ -122,10 +123,6 @@ namespace FNZ.Bomb
             set
             {
                 _resizeMode = value;
-                if (_resizeMode == ResizeMode.NoResize)
-                {
-                    Topmost = true;
-                }
                 OnPropertyChanged("ResizeMode");
             }
         }
@@ -144,20 +141,6 @@ namespace FNZ.Bomb
             }
         }
 
-        private bool _topmost;
-        public bool Topmost
-        {
-            get
-            {
-                return _topmost;
-            }
-            set
-            {
-                _topmost = value;
-                OnPropertyChanged("Topmost");
-            }
-        }
-
         private int _codeLength;
         public int CodeLength
         {
@@ -169,6 +152,20 @@ namespace FNZ.Bomb
             {
                 _codeLength = value;
                 OnPropertyChanged("CodeLength");
+            }
+        }
+
+        private TextAlignment _alignment;
+        public TextAlignment Alignment
+        {
+            get
+            {
+                return _alignment;
+            }
+            set
+            {
+                _alignment = value;
+                OnPropertyChanged("Alignment");
             }
         }
 
